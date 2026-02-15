@@ -1,35 +1,55 @@
-
-
-import { FaDownload, FaEye, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
   return (
     <section className="hero">
-      <img src="https://i.pravatar.cc/200?img=5" alt="profile" />
+      <div className="hero-container">
 
-      <h1>Hi, I'm <span>Sushmitha K</span></h1>
+        {/* LEFT */}
+        <div className="hero-left">
+          <h4>Hello, It's Me</h4>
 
-      <p>MERN Stack Developer</p>
+          <h1>
+            Sushmitha K
+          </h1>
 
-      <div className="buttons">
-        <a href="#projects" className="primary">
-          <FaEye /> View Projects
-        </a>
+          <h3>
+            And I'm a <span>MERN Stack Developer</span>
+          </h3>
 
-        <a href="/resume.pdf" className="secondary">
-          <FaDownload /> Download CV
-        </a>
-      </div>
+          <p>
+            I build responsive websites and scalable web applications.
+            Passionate about creating modern UI and solving real world problems.
+          </p>
 
-      {/* Social Icons */}
-      <div className="socials">
-        <a href="https://linkedin.com" target="_blank">
-          <FaLinkedin />
-        </a>
+          <div className="hero-buttons">
+            <a href="#projects" className="btn-primary">
+              View Projects
+            </a>
 
-        <a href="https://github.com" target="_blank">
-          <FaGithub />
-        </a>
+            <a href="/resume.pdf" className="btn-outline">
+              <FaDownload /> Download CV
+            </a>
+          </div>
+
+          <div className="hero-socials">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+              <FaLinkedin />
+            </a>
+
+            <a href="https://github.com" target="_blank" rel="noreferrer">
+              <FaGithub />
+            </a>
+          </div>
+        </div>
+
+        {/* RIGHT */}
+        <div className="hero-right">
+          <div className="image-wrapper">
+            <img src="https://i.pravatar.cc/300?img=5" alt="profile" />
+          </div>
+        </div>
+
       </div>
     </section>
   );

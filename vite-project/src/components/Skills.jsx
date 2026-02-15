@@ -16,14 +16,14 @@ export default function Skills() {
           <h3>Technical Skills</h3>
 
           <div className="skills-grid">
-            <div className="skill-card"><FaHtml5 /> HTML</div>
-            <div className="skill-card"><FaCss3Alt /> CSS</div>
-            <div className="skill-card"><FaJs /> JavaScript</div>
-            <div className="skill-card"><FaReact /> React</div>
-            <div className="skill-card"><FaNodeJs /> Node.js</div>
-            <div className="skill-card"><SiExpress /> Express</div>
-            <div className="skill-card"><SiMongodb /> MongoDB</div>
-            <div className="skill-card"><FaGit /> Git</div>
+            <div className="icon-skill"><FaHtml5 /><span>HTML</span></div>
+            <div className="icon-skill"><FaCss3Alt /><span>CSS</span></div>
+            <div className="icon-skill"><FaJs /><span>JavaScript</span></div>
+            <div className="icon-skill"><FaReact /><span>React</span></div>
+            <div className="icon-skill"><FaNodeJs /><span>Node.js</span></div>
+            <div className="icon-skill"><SiExpress /><span>Express</span></div>
+            <div className="icon-skill"><SiMongodb /><span>MongoDB</span></div>
+            <div className="icon-skill"><FaGit /><span>Git</span></div>
           </div>
         </div>
 
@@ -32,11 +32,11 @@ export default function Skills() {
           <h3>Soft Skills</h3>
 
           <div className="skills-grid">
-            <div className="skill-card"><FaBrain /> Problem Solving</div>
-            <div className="skill-card"><FaUsers /> Team Player</div>
-            <div className="skill-card"><FaSyncAlt /> Adaptable</div>
-            <div className="skill-card"><FaClock /> Time Management</div>
-            <div className="skill-card"><FaBolt /> Quick Learner</div>
+            <div className="icon-skill"><FaBrain /><span>Problem Solving</span></div>
+            <div className="icon-skill"><FaUsers /><span>Team Player</span></div>
+            <div className="icon-skill"><FaSyncAlt /><span>Adaptable</span></div>
+            <div className="icon-skill"><FaClock /><span>Time Management</span></div>
+            <div className="icon-skill"><FaBolt /><span>Quick Learner</span></div>
           </div>
         </div>
 
