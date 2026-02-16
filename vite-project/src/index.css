@@ -191,10 +191,24 @@ p {
 /* ABOUT */
 /* ================= */
 #about .card {
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: auto;
   text-align: center;
 }
+
+#about h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+#about .card p {
+  font-size: 28px;     /* before 16 */
+  line-height: 2;      /* more readable */
+  padding: 10px 20px;
+}
+#about .card {
+  padding: 35px;
+}
+
 
 /* ================= */
 /* PROJECT */
@@ -222,6 +236,9 @@ p {
   font-size: 15px;
   color: #38bdf8;
 }
+#projects h2{
+  font-size: 50px;
+}
 
 /* ================= */
 /* EDUCATION */
@@ -241,7 +258,12 @@ p {
   padding: 35px;
   border-left: 6px solid #38bdf8;
 }
-
+#education h2{
+  font-size: 50px;
+}
+#education h3{
+  font-size: 30px;
+}
 /* ================= SKILLS UPGRADE ================= */
 
 #skills {
@@ -381,18 +403,18 @@ svg {
 
 /* LEFT */
 .hero-left h4 {
-  font-size: 18px;
+  font-size: 30px;
   color: #cbd5e1;
   margin-bottom: 10px;
 }
 
 .hero-left h1 {
-  font-size: 48px;
+  font-size: 68px;
   font-weight: 700;
 }
 
 .hero-left h3 {
-  font-size: 22px;
+  font-size: 25px;
   margin: 10px 0;
 }
 
@@ -402,6 +424,7 @@ svg {
 
 .hero-left p {
   margin-top: 15px;
+  margin-left: 190px;
   max-width: 500px;
 }
 
@@ -496,3 +519,231 @@ svg {
     justify-content: center;
   }
 }
+/* ================= ABOUT INFO ================= */
+
+.about-info {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-box {
+  padding: 22px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.06);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.info-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px #38bdf8;
+}
+
+/* ICON */
+.info-icon {
+  font-size: 26px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.info-box h4 {
+  color: #38bdf8;
+  margin-bottom: 6px;
+}
+/* ================= SKILLS NEW ================= */
+
+/* ================= SKILLS DIVIDER VERSION ================= */
+
+.skills-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* equal width */
+  gap: 80px;
+  position: relative;               /* important for line */
+}
+
+/* CENTER LINE */
+.skills-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom, transparent, #38bdf8, transparent);
+  opacity: 0.5;
+}
+
+/* TITLE */
+.skills-block h3 {
+  text-align: center;
+  margin-bottom: 35px;
+  color: #38bdf8;
+  font-size: 24px;
+}
+
+/* LIST */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* BAR */
+.skill-bar {
+  padding: 22px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 18px;
+
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* ICON */
+.skill-bar svg {
+  font-size: 22px;
+}
+
+/* HOVER */
+.skill-bar:hover {
+  background: linear-gradient(45deg, #0ea5e9, #8b5cf6);
+  transform: translateX(10px);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .skills-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* remove line in mobile */
+  .skills-wrapper::after {
+    display: none;
+  }
+}
+/* ================= TECH 2 COLUMN BALANCE ================= */
+
+/* change only technical list */
+.skills-block:first-child .skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* 2 per row */
+  gap: 18px 20px;
+}
+
+/* reduce bar size little */
+.skills-block:first-child .skill-bar {
+  padding: 18px 20px;
+  font-size: 16px;
+}
+
+/* icon smaller */
+.skills-block:first-child .skill-bar svg {
+  font-size: 18px;
+}
+/* ================= SOFT ONE LINE FIX ================= */
+
+/* back to single column */
+.skills-block:last-child .skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* SAME SIZE like technical */
+.skills-block:last-child .skill-bar {
+  padding: 18px 20px;
+  font-size: 16px;
+}
+
+/* SAME ICON SIZE */
+.skills-block:last-child .skill-bar svg {
+  font-size: 18px;
+}
+/* ================= FINAL SPACING & FONT BOOST ================= */
+
+.skills-wrapper {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;                /* overall space */
+  position: relative;
+}
+
+/* move LEFT block slightly left */
+.skills-block:first-child {
+  padding-right: 40px;
+}
+
+/* move RIGHT block slightly right */
+.skills-block:last-child {
+  padding-left: 40px;
+}
+
+/* increase title */
+.skills-block h3 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+/* bar text bigger */
+.skill-bar {
+  font-size: 30px;
+  padding: 20px 22px;
+}
+
+/* icon little bigger */
+.skill-bar svg {
+  font-size: 20px;
+}
+
+#skills h2{
+  font-size: 40px;
+}/* ================= BOTH SIDE FONT BOOST ================= */
+
+.skill-bar {
+  font-size: 20px;      /* increase here */
+}
+
+/* icons */
+.skill-bar svg {
+  font-size: 22px;
+}
+/* ================= SOFT SKILLS TEXT BIGGER ================= */
+
+.skills-block:nth-child(2) .skill-bar {
+  font-size: 20px;   /* change size here */
+}
+
+/* icon also little bigger if needed */
+.skills-block:nth-child(2) .skill-bar svg {
+  font-size: 22px;
+}
+/* ================= TECH TEXT BIGGER ================= */
+
+.skills-block:first-child .skill-bar {
+  font-size: 20px;   /* change size here */
+}
+
+/* icon also little big if needed */
+.skills-block:first-child .skill-bar svg {
+  font-size: 22px;
+}
+

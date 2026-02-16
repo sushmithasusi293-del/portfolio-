@@ -28,7 +28,7 @@ export default function Contact() {
             <FaGithub />
           </div>
           <h3>GitHub</h3>
-          <p>github.com</p>
+          <p>https://github.com</p>
         </div>
 
         <div className="contact-card">
@@ -36,7 +36,7 @@ export default function Contact() {
             <FaLinkedin />
           </div>
           <h3>LinkedIn</h3>
-          <p>linkedin.com</p>
+          <p>https://linkedin.com</p>
         </div>
 
       </div>

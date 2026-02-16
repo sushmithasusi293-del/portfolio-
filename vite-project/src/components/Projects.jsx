@@ -10,7 +10,9 @@ export default function Projects() {
 
         {/* Project 1 */}
         <div className="project-card">
-          <img src="https://picsum.photos/600/400?1" alt="project" />
+          <img src="/images/pas.jpg" alt="Project" />
+
+
 
           <div className="project-content">
             <h3>Fast Food Ordering Website</h3>
@@ -20,7 +22,7 @@ export default function Projects() {
             </p>
 
             <div className="project-buttons">
-              <a href="https://github.com" target="_blank">
+              <a href="https://github.com/sushmithasusi293-del/fastfood-.git" target="_blank">
                 <FaGithub /> Code
               </a>
             </div>
@@ -29,7 +31,7 @@ export default function Projects() {
 
         {/* Project 2 */}
         <div className="project-card">
-          <img src="https://picsum.photos/600/400?2" alt="project" />
+          <img src="/images/ear.jpg" alt="project" />
 
           <div className="project-content">
             <h3>Online E-Commerce Store</h3>
@@ -39,20 +41,18 @@ export default function Projects() {
             </p>
 
             <div className="project-buttons">
-              <a href="https://github.com" target="_blank">
+              <a href="https://github.com/sushmithasusi293-del/earrings-project.git" target="_blank">
                 <FaGithub /> Code
               </a>
 
-              <a href="#" target="_blank" className="live">
-                <FaExternalLinkAlt /> Live Demo
-              </a>
+             
             </div>
           </div>
         </div>
 
         {/* Project 3 */}
         <div className="project-card">
-          <img src="https://picsum.photos/600/400?3" alt="project" />
+          <img src="/images/skin.jpg" alt="project" />
 
           <div className="project-content">
             <h3>Skincare E-Commerce Platform</h3>
@@ -62,8 +62,11 @@ export default function Projects() {
             </p>
 
             <div className="project-buttons">
-              <a href="https://github.com" target="_blank">
+              <a href="https://github.com/sushmithasusi293-del/skinpractice-.git" target="_blank">
                 <FaGithub /> Code
+              </a>
+               <a href="#" target="_blank" className="live">
+                <FaExternalLinkAlt /> Live Demo
               </a>
             </div>
           </div>
