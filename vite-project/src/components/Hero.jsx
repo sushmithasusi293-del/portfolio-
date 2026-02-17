@@ -27,17 +27,22 @@ export default function Hero() {
               View Projects
             </a>
 
-            <a href="/resume.pdf" className="btn-outline">
+            <a
+              href="/imgaes/Sushmitha_K_Resume.pdf"
+              download="Sushmitha_K_Resume.pdf"
+              className="btn-outline"
+            >
               <FaDownload /> Download CV
             </a>
+
           </div>
 
           <div className="hero-socials">
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a href="https://linkedin.com/in/Sushmithasusi" target="_blank" rel="noreferrer">
               <FaLinkedin />
             </a>
 
-            <a href="https://github.com" target="_blank" rel="noreferrer">
+            <a href="https://github.com/sushmithasusi293-del" target="_blank" rel="noreferrer">
               <FaGithub />
             </a>
           </div>
@@ -46,7 +51,7 @@ export default function Hero() {
         {/* RIGHT */}
         <div className="hero-right">
           <div className="image-wrapper">
-            <img src="https://i.pravatar.cc/300?img=5" alt="profile" />
+            <img src="/images/susi.jpg" alt="profile" />
           </div>
         </div>
 

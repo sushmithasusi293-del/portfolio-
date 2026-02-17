@@ -27,7 +27,7 @@ export default function About() {
             <MdEmail />
           </div>
           <h4>Email</h4>
-          <p>yourmail@gmail.com</p>
+          <p>sushmithasusi293@gmai.com</p>
         </div>
 
         <div className="info-box">
@@ -35,7 +35,7 @@ export default function About() {
             <FaPhoneAlt />
           </div>
           <h4>Phone</h4>
-          <p>9876543210</p>
+          <p>6382444517</p>
         </div>
 
         <div className="info-box">
@@ -43,7 +43,7 @@ export default function About() {
             <FaMapMarkerAlt />
           </div>
           <h4>Location</h4>
-          <p>Erode, Tamil Nadu</p>
+          <p>puliyampatti, Tamil Nadu</p>
         </div>
       </div>
     </section>

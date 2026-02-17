@@ -12,7 +12,9 @@ export default function Contact() {
             <FaEnvelope />
           </div>
           <h3>Email</h3>
-          <p>sushmithasusi293@gmail.com</p>
+          <a href="mailto:sushmithasusi293@gmail.com">
+            sushmithasusi293@gmail.com
+          </a>
         </div>
 
         <div className="contact-card">
@@ -20,7 +22,9 @@ export default function Contact() {
             <FaPhone />
           </div>
           <h3>Phone</h3>
-          <p>6382444517</p>
+          <a href="tel:6382444517">
+            6382444517
+          </a>
         </div>
 
         <div className="contact-card">
@@ -28,7 +32,13 @@ export default function Contact() {
             <FaGithub />
           </div>
           <h3>GitHub</h3>
-          <p>https://github.com</p>
+          <a 
+            href="https://github.com/sushmithasusi293-del" 
+            target="_blank" 
+            rel="noreferrer"
+          >
+            github.com/sushmitha
+          </a>
         </div>
 
         <div className="contact-card">
@@ -36,7 +46,13 @@ export default function Contact() {
             <FaLinkedin />
           </div>
           <h3>LinkedIn</h3>
-          <p>https://linkedin.com</p>
+          <a 
+            href="https://linkedin.com/in/Sushmithasusi" 
+            target="_blank" 
+            rel="noreferrer"
+          >
+            linkedin.com/in/sushmitha
+          </a>
         </div>
 
       </div>

@@ -2,7 +2,9 @@ import {
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGit,
   FaBrain, FaUsers, FaSyncAlt, FaBolt
 } from "react-icons/fa";
-import { SiExpress, SiMongodb } from "react-icons/si";
+
+import { SiExpress, SiMongodb, SiBootstrap } from "react-icons/si";
+import { MdApi } from "react-icons/md";
 
 export default function Skills() {
   return (
@@ -11,11 +13,11 @@ export default function Skills() {
 
       <div className="skills-wrapper">
 
-        {/* TECH */}
+        {/* TECHNICAL */}
         <div className="skills-block">
           <h3>Technical Skills</h3>
 
-          <div className="skills-list">
+          <div className="skills-list tech-list">
             <div className="skill-bar"><FaHtml5 /> HTML</div>
             <div className="skill-bar"><FaCss3Alt /> CSS</div>
             <div className="skill-bar"><FaJs /> JavaScript</div>
@@ -23,7 +25,9 @@ export default function Skills() {
             <div className="skill-bar"><FaNodeJs /> Node.js</div>
             <div className="skill-bar"><SiExpress /> Express</div>
             <div className="skill-bar"><SiMongodb /> MongoDB</div>
-            <div className="skill-bar"><FaGit /> Git</div>
+            <div className="skill-bar"><SiBootstrap /> Bootstrap</div>
+            <div className="skill-bar"><MdApi /> REST API</div>
+            <div className="skill-bar"><FaGit /> Git/GitHub</div>
           </div>
         </div>
 
@@ -31,7 +35,7 @@ export default function Skills() {
         <div className="skills-block">
           <h3>Soft Skills</h3>
 
-          <div className="skills-list">
+          <div className="skills-list soft-list">
             <div className="skill-bar"><FaBrain /> Problem Solving</div>
             <div className="skill-bar"><FaUsers /> Self Motivation</div>
             <div className="skill-bar"><FaSyncAlt /> Adaptable</div>
