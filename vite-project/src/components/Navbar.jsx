@@ -1,24 +1,21 @@
-
-import { FaUser, FaLaptopCode, FaProjectDiagram, FaEnvelope, FaMoon, FaSun } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { 
+  FaUser, 
+  FaLaptopCode, 
+  FaProjectDiagram, 
+  FaEnvelope, 
+  FaGraduationCap 
+} from "react-icons/fa";
 
 export default function Navbar() {
-  const [dark, setDark] = useState(false);
-
-  useEffect(() => {
-    document.body.classList.toggle("dark-mode", dark);
-  }, [dark]);
-
   return (
     <nav className="navbar">
-      <h2>Sushmitha K</h2>
-      <button className="theme-toggle" onClick={() => setDark(!dark)}>
-        {/* {dark ? <FaSun /> : <FaMoon />} */}
-      </button>
+      <h2 className="logo">Sushmitha K</h2>
+
       <ul>
         <li><a href="#about"><FaUser /> About</a></li>
         <li><a href="#skills"><FaLaptopCode /> Skills</a></li>
         <li><a href="#projects"><FaProjectDiagram /> Projects</a></li>
+        <li><a href="#education"><FaGraduationCap /> Education</a></li>
         <li><a href="#contact"><FaEnvelope /> Contact</a></li>
       </ul>
     </nav>
