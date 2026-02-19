@@ -68,7 +68,7 @@ export default function Projects() {
               <a href="https://github.com/sushmithasusi293-del/skinpractice-.git" target="_blank">
                 <FaGithub /> Code
               </a>
-              <a href="https://fastfood-5c2v.onrender.com/" target="_blank" className="live">
+              <a href="https://beauty-skin-care.onrender.com" target="_blank" className="live">
                 <FaExternalLinkAlt /> Live Demo
               </a>
             </div>

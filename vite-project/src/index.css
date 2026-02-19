@@ -201,7 +201,7 @@ p {
   margin-bottom: 30px;
 }
 #about .card p {
-  font-size: 28px;     /* before 16 */
+  font-size: 20px;     /* before 16 */
   line-height: 2;      /* more readable */
   padding: 10px 20px;
 }
@@ -262,7 +262,7 @@ p {
   font-size: 50px;
 }
 #education h3{
-  font-size: 30px;
+  font-size: 20px;
 }
 /* ================= SKILLS UPGRADE ================= */
 
@@ -424,7 +424,7 @@ svg {
 
 .hero-left p {
   margin-top: 15px;
-  margin-left: 190px;
+  margin-left: 90px;
   max-width: 500px;
 }
 
