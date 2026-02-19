@@ -47,7 +47,9 @@ export default function Projects() {
               <a href="https://github.com/sushmithasusi293-del/earrings-project.git" target="_blank">
                 <FaGithub /> Code
               </a>
-
+ <a href="https://earrings-project.onrender.com" target="_blank" className="live">
+                <FaExternalLinkAlt /> Live Demo
+              </a>
 
             </div>
           </div>
