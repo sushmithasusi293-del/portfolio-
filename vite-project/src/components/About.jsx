@@ -8,15 +8,7 @@ export default function About() {
 
       <div className="card about-card">
         <p>
-          I am a motivated MERN Stack Developer with hands-on experience
-          in building responsive and scalable web applications.
-
-          I enjoy transforming real-world problems into digital solutions.
-          I have worked with React for frontend and Node.js & Express
-          for backend development.
-
-          I am a quick learner, adaptable, and a strong team player
-          aiming to deliver high-quality software.
+          I am a motivated MERN Stack Developer with hands-on experience in building responsive and scalable web applications. I enjoy transforming real-world problems into effective digital solutions. I have experience working with React for frontend development and Node.js with Express for backend development. I am a quick learner, adaptable, and a strong team player committed to delivering high-quality software solutions.
         </p>
       </div>
 
